@@ -2,18 +2,18 @@
 To produce messages to a Kafka topic using avro schema as defined in hortonworks schema registry (the example is for a secure cluster)
 
 1. Create a producer config file, with its contents like below. let's call it /tmp/producer.conf:
-acks=all
-sasl.kerberos.service.name=kafka
-zookeeper.set.acl=true
-kafkastore.security.protocol=SASL_PLAINTEXT
-kafkastore.sasl.mechanism=GSSAPI
-kafkastore.sasl.kerberos.service.name=kafka
-security.protocol=SASL_PLAINTEXT
-schema.registry.url=http://hdf-node3.hwx-labs.com:7788/api/v1
-bootstrap.servers=hdf-node3.hwx-labs.com:6667
-topic=packettrace
-ignore.invalid.messages=false
-compression.type=none
+acks=all  
+sasl.kerberos.service.name=kafka  
+zookeeper.set.acl=true  
+kafkastore.security.protocol=SASL_PLAINTEXT  
+kafkastore.sasl.mechanism=GSSAPI  
+kafkastore.sasl.kerberos.service.name=kafka  
+security.protocol=SASL_PLAINTEXT  
+schema.registry.url=http://hdf-node3.hwx-labs.com:7788/api/v1  
+bootstrap.servers=hdf-node3.hwx-labs.com:6667  
+topic=packettrace  
+ignore.invalid.messages=false  
+compression.type=none  
 
 2. Prepare the data in json format. For example:  packettrace.json
 {"src":"10.0.6.3","dest":"stark","destport": 12345 }
