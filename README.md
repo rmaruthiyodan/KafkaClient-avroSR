@@ -22,6 +22,7 @@ To produce messages to a Kafka topic using avro schema as defined in hortonworks
 
 
 > {"src":"10.0.6.3","dest":"stark","destport": 12345 }
+
 > {"src":"wolverine","dest":"stark","destport": 2245 }
 
 -------
