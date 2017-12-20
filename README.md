@@ -22,22 +22,21 @@ To produce messages to a Kafka topic using avro schema as defined in hortonworks
 
 
 > {"src":"10.0.6.3","dest":"stark","destport": 12345 }
-
 > {"src":"wolverine","dest":"stark","destport": 2245 }
 
 -------
 
-3. Prepare the schema. Let's call it packettrace.avsc
->  {
->    "type" : "record",
->    "name" : "packettrace",
->    "namespace" : "hortonworks.hdp.support.packettrace",
->    "fields" : [
->       { "name" : "src" , "type" : "string" },
->       { "name" : "dest" , "type" : "string" },
->       { "name" : "destport" , "type" : "int" }
->    ]
-> }
+3. Prepare the schema. Let's call it packettrace.avsc  
+ >  {  
+ >    "type" : "record",  
+ >    "name" : "packettrace",  
+ >    "namespace" : "hortonworks.hdp.support.packettrace",  
+ >    "fields" : [  
+ >       { "name" : "src" , "type" : "string" },  
+ >       { "name" : "dest" , "type" : "string" },  
+ >       { "name" : "destport" , "type" : "int" }  
+ >    ]  
+ > }  
 
 -------
 4. Register the new schema to Schema registry with the same name as that of topic.
