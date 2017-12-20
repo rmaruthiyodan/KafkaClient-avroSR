@@ -21,7 +21,7 @@ To produce messages to a Kafka topic using avro schema as defined in hortonworks
 2. Prepare the data in json format. For example:  packettrace.json
 
 
-> {"src":"10.0.6.3","dest":"stark","destport": 12345 }
+> {"src":"10.0.6.3","dest":"stark","destport": 12345 }  
 > {"src":"wolverine","dest":"stark","destport": 2245 }
 
 -------
