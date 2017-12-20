@@ -45,6 +45,6 @@ To produce messages to a Kafka topic using avro schema as defined in hortonworks
 5. The pom.xml is defined to use shaded plugin. Run the program as follows:  
 
 
- > java /tmp -Djava.security.auth.login.config=/etc/kafka/conf/kafka_client_jaas.conf -jar /tmp/KafkaAvro-0.0.2-SNAPSHOT.jar com.hwxlabs.registry.KafkaAvro.KafkaAvroSRClient -sm -p /tmp/producer.properties -d /tmp/data.avro_json -s /tmp/packettrace.avsc
+ > java /tmp -Djava.security.auth.login.config=/etc/kafka/conf/kafka_client_jaas.conf -jar /tmp/KafkaClient-avroSR-0.0.1-SNAPSHOT.jar com.hwxlabs.registry.KafkaAvro.KafkaAvroSRClient -sm -p /tmp/producer.conf -d /tmp/packettrace.json -s /tmp/packettrace.avsc
 
 This is a bit modified version of https://github.com/hortonworks/registry/blob/HDF-2.1.0.0/examples/schema-registry/avro/src/main/java/com/hortonworks/registries/schemaregistry/examples/avro/TruckEventsKafkaAvroSerDesApp.java
